@@ -15,6 +15,16 @@ body {
     
 }
 
+.to-real {
+  color: white;
+  padding: 10px;
+}
+
+.real-output {
+  color: white;
+  padding: 10px;
+}
+
 .container {
   text-align: center;
   padding: 20px;

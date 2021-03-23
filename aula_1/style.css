@@ -1,23 +1,26 @@
 body {
     font-family: 'Roboto Mono',monospace;
     min-height: 400px;
-    background-image: url('https://images.vexels.com/media/users/3/185145/isolated/preview/68b3d35ff9797cbd08182f070b8d8804-iacute-cone-de-criatura-yeti-by-vexels.png');
+    background-image: url('https://upload.wikimedia.org/wikipedia/pt/1/1e/Anverso_da_c%C3%A9dula_de_dois_reais.PNG'), url('https://mercadocotacao.com/wp-content/themes/mc/icons/dolar-hoje.png');
     background-color: #000000;
-    background-size: 43vh;
-    background-position: center left;
-    background-repeat: no-repeat;
+    background-size: 43vh, 51vh;
+    background-position: center left, center right;
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: 120px, 1320px;
+    background-position-y: 300px, 310px;
+    
   }
 
-.dolar-input {
+.money-input {
   color: #ffffff;
   padding: 200px 0px 0px 0px;
   right: 50px;
     
 }
 
-.to-real {
+.currency-cbox {
+  padding: 20px;
   color: white;
-  padding: 10px;
 }
 
 .real-output {

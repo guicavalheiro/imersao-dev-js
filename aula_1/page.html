@@ -11,18 +11,39 @@
         Conversor de moedas
       </h1>
       <p class="page-subtitle">
-        Descubra os valores em dolar U$
+        Descubra quanto o seu dinheiro vale em outros países!
       </p>
       <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
-      <div class="dolar-input">
-        <p>Insira a quantidade em dólar</p>
-        <input id="dolarInput"></input>
+      <div class="money-input">
+        <p>Insira a quantia a ser convertida</p>
+        <input id="moneyInput" oninput="conversion()"></input>
       </div>
-      <div class = "to-real">
-        <button onclick="toReal()">Converter para Real</button>
+      <div class=currency-cbox>
+        <select id="from-currency-cbox" onchange="conversion()">
+          <option value=""></option>
+          <option value="dol">Dólar</option>
+          <option value="eu">Euro</option>
+          <option value="lb">Libra</option>
+          <option value="real">Real</option>
+          <option value="btc">Bitcoin</option>
+        </select>
+
+        <b> para </b>
+
+        <select id="to-currency-cbox" onchange="conversion()">
+          <option value=""></option>
+          <option value="dol">Dólar</option>
+          <option value="eu">Euro</option>
+          <option value="lb">Libra</option>
+          <option value="real">Real</option>
+          <option value="btc">Bitcoin</option>
+        </select>
       </div>
+      <!-- <div class = "to-real">
+        <button onchange="toReal()" onclick="toReal()">Converter para Real</button>
+      </div> -->
       <div class = "real-output">
-        <p id="realOutput"></p>
+        <p id="conversionOutput"></p>
       </div>
     </div>
       <a href="https://alura.com.br/" target="_blank">
